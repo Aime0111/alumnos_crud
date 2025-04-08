@@ -29,6 +29,9 @@
 </style>
 
 <div class="container mt-4">
+    <a href="{{ url_for('create_alumno') }}" title="Agregar Alumno">
+        <i class="fas fa-user-plus icono-agregar"></i>
+    </a>
 
     <table class="table table-bordered table-striped text-center">
         <thead class="table-dark">
@@ -38,6 +41,7 @@
                 <th>Apellido Paterno</th>
                 <th>Apellido Materno</th>
                 <th>Semestre</th>
+                <th>Acciones</th>
             </tr>
         </thead>
         <tbody>

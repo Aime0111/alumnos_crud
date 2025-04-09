@@ -8,12 +8,23 @@
         body {
             font-family: "Century Gothic", sans-serif;
         }
+
+        .header-colored {
+            background: linear-gradient(to right, #6a0dad, #c084fc); /* morado a violeta */
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
     </style>
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
     <div class="container mt-4">
-        <h1 class="text-center">Administración de alumnos</h1>
+        <div class="header-colored text-center">
+            <h1>Administración de alumnos / Prueba Webhook</h1>
+        </div>
         <hr>
         <div class="container">
             {% block content %}{% endblock %}
